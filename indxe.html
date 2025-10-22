@@ -501,7 +501,13 @@
       <input type="submit" value="Save">
     </form>
 <hr>
-<form action="" method="GET">
+<!--NoValidate= 
+بدون novalidate: المتصفح يمنع الإرسال إذا كان غير صالح.
+مع novalidate: المتصفح يسمح بالإرسال مهما كانت صحة البيانات، والمطور يتولى التحقق لاحقًا. 
+
+Target= تُستخدم في  لتحديد أين تُفتح الصفحة أو الرابط عند الضغط عليه.
+-->
+<form action="" method="GET" NoValidate Target="_blank" >
       <input type="hidden" value="Osama" />
       <div>
         <label>Username</label>
@@ -571,27 +577,182 @@
         <label for="mac1">Mac</label>
       </div>
       <br />
+      <!--select -->
      <label for="book">Choose Book:</label>
+           <!--اقدر اختار اكثر من كتاب 
+           <select name="book" id="book" MULTIPE >
+           -->
       <select name="book" id="book">
         <optgroup label="Romantic Books">
           <option value="1">Book 1</option>
           <option value="2">Book 2</option>
           <option value="3">Book 3</option>
         </optgroup>
+              <!--select  -->
+
         <optgroup label="Police Books">
+                        <!--selected =  تُستخدم مع عناصر <option> داخل قائمة <select> لتحديد الخيار الافتراضي الذي يظهر مُختارًا عند تحميل الصفحة. -->
+
           <option value="4" selected>Book 4</option>
           <option value="5">Book 5</option>
           <option value="6">Book 6</option>
         </optgroup>
       </select>
       <hr />
+
       <textarea name="subject" cols="40" rows="10" placeholder="Test Text"></textarea>
       <hr />
+              <!--تحميل ملف  -->
+        <div>
+        <label>Upload</label>
+        <input type="file" />
+      </div>
+      <hr />
+            <!--بحث  -->
+      <div>
+        <label>Search</label>
+        <input type="search" />
+      </div>
+
+      <hr />
+                  <!--لينك  Url-->
+
+      <div>
+        <label>Url</label>
+        <input type="url" />
+      </div>
+
+      <hr />
+                  <!--التاريخ-->
+
+      <div>
+        <label>Date</label>
+        <input type="date" />
+      </div>
+      <hr />
+           <!--الشهر-->
+
+
+      <div>
+        <label>Month</label>
+        <input type="month" />
+      </div>
+
+      <hr />
+                  <!--الوقت-->
+      <div>
+        <label>Time</label>
+        <input type="time" />
+      </div>
+    <!--  DataList = هذا عنصر جميل في HTML يُستخدم لإعطاء المستخدم قائمة اقتراحات جاهزة أثناء الكتابة في مربع إدخال (input).
+      وكمان بحث
+    -->
+         <input list="programming" name="prog">
+
+      <datalist id="programming">
+        <option value="Python">
+        <option value="PHP">
+        <option value="C#">
+        <option value="C">
+        <option value="C++">
+        <option value="Scala">
+      </datalist>
+
+      <hr />
+
       <input type="reset" value="Reset" />
       <input type="submit" value="Save" />
+
+<hr>
+<!--q=  في  يُستخدم لكتابة اقتباس قصير (قصّة أو جملة منقولة او حكمة) داخل النص.
+المتصفح عادة يضيف له علامات اقتباس “ ” تلقائيًا حول الكلام.
+-->
+<q>This Is Wise Word</q>
+<!--blockquote= ستخدم لكتابة اقتباس طويل (فقرة أو نص منقول من مصدر آخر). -->
+    <blockquote>This Is Wise Word</blockquote>
+    <!--Button= يُستخدم لإنشاء زر (Button) يمكن للمستخدم الضغط عليه لتنفيذ أمر معيّن — مثل إرسال نموذج، أو تشغيل كود، أو فتح صفحة.-->
+    <button>Click</button>
+    <div>
+      https://www.youtube.com/<wbr>playlist?list=PLM_i0obccy3swdHfFh1FrLEVVFMp8<wbr>-5Jc&fbclid=IwAR2eP038MSFNJSmNCssdpaBm3KofEJUG9e<wbr>jR95GGGm9AKB0StOIPpLA6fgc
+    </div>
+    <!--p = يُستخدم لكتابة فقرة نصية (Paragraph) — أي قطعة نص متكاملة داخل الصفحة.-->
+    <p>السلام 2 Welcome</p>
+    <!--bdi=يُستخدم لعزل جزء من النص الذي قد تكون لغته باتجاه مختلف (يمين إلى يسار أو العكس)، حتى لا يختلط ترتيب النصوص عندما تُعرض مع لغات أخرى.-->
+    <p><bdi>السلام</bdi> 2 Welcome</p>
+
+    <hr>
+    <!-- code=يُستخدم لعرض نص برمجي (كود) — مثل أوامر أو دوال — بطريقة تُظهره كمحتوى تقني مميز داخل الصفحة.-->
+    <!---->
+    <code>
+      var x = 10;
+      var y = 20;
+      console.log(x + y);
+    </code>
+    <p>
+      This Is
+      P
+      New Line
+      New Line
+    </p>
+        <!--pre=يُستخدم لعرض النص كما هو تمامًا — أي يحافظ على المسافات، والأسطر الجديدة، والتنسيق الذي تكتبه في الكود. -->
+
+    <pre>
+      This Is
+      P
+      New Line
+      New Line
+    </pre>
+    <pre>
+      <code>
+        var x = 10;
+        var y = 20;
+        console.log(x + y);
+      </code>
+    </pre>
+    <!--iframe= يُستخدم لعرض صفحة ويب داخل صفحة أخرى.
+بمعنى آخر: هو مثل نافذة صغيرة داخل موقعك تُظهر موقعًا أو صفحة مختلفة.-->
+    <iframe src="https://elzero.org/study/html-2021-study-plan/" width="400" height="200"></iframe>
+
+    </form>
+<!--Accessibility =ي عالم الويب تعني سهولة الوصول والاستخدام لموقعك أو تطبيقك لجميع المستخدمين، بما في ذلك ذوي الاحتياجات الخاصة.
+-->
+      <form action="">
+      <label for="user">Username</label>
+      <input id="user" type="text" name="user">
+      <!-- Old -->
+      <div>Send</div>
+      <div>Reset</div>
+      <!-- New -->
+      <button>Send</button>
+      <button>Reset</button>
     </form>
 
+     <!-- ARIA -->
+    <h1>Book Title</h1>
 
+    <h3>Chapter One</h3>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, voluptas placeat necessitatibus nulla velit quae
+      reprehenderit minus fugiat illo tempora eaque, ullam corrupti doloribus perspiciatis unde rem perferendis nesciunt
+      aspernatur!
+    </p>
+    <div>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus quisquam sed at reiciendis asperiores officia
+      similique id non, ducimus nobis possimus eligendi itaque magni molestias illum quam beatae. Velit, facilis?
+    </div>
+    <h2>Inside Chapter One</h2>
+    <form action="">
+      <label for="skill1">Skill One</label>
+      <input id="skill1" type="checkbox" checked />
+      <label for="skill2">Skill Two</label>
+      <input id="skill2" type="checkbox" />
+    </form>
+    <hr />
+    <!-- -->
+    <div role="checkbox" aria-checked="true" tabindex="0" aria-labelledby="plan1">Plan One</div>
+    <label id="plan1">Plan One Label</label>
+    <div tabindex="0">Plan Two</div>
+    <div tabindex="0">Plan Three</div>
   </body>
 
 </html>
