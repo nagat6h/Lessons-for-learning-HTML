@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap</title>
+     <!--استيراد بوتستراب-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <style>
+        .btn{
+            box-shadow: 0px 10px 10px rgba(115, 132, 229, 0.5);
+        }
+        .btn:hover{
+           box-shadow: 0px 10px 10px rgba(169, 166, 244, 0.8);
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg  navbar-dark " style="background-color:  #9d8394 ;"> <!--bg-primary-->
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Dropdown
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                </li>
+            </ul>
+            
+            <form class="d-flex" role="search">
+               <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+               <button class="btn btn-outline-primary" type="submit">Search</button>
+            </form>
+
+            </div>
+        </div>
+    </nav>
+<div class="container mt-5">
+
+       <h2>Bootstrap</h2>
+        
+    <button type="button" class="btn btn-outline-primary">Primary</button>
+    <button type="button" class="btn btn-outline-secondary">Secondary</button>
+    <button type="button" class="btn btn-outline-success">Success</button>
+    <button type="button" class="btn btn-outline-danger">Danger</button>
+    <button type="button" class="btn btn-outline-warning">Warning</button>
+    <button type="button" class="btn btn-outline-info">Info</button>
+    <button type="button" class="btn btn-outline-light">Light</button>
+    <button type="button" class="btn btn-outline-dark">Dark</button>
+    <hr>
+ <h2>Bootstrap</h2>
+    <div class="card" style="width: 18rem;">
+    <img src="N لوجو.png" class="card-img-top" alt="...">
+    <div class="card-body">
+        <h5 class="card-title" style="direction: rtl;">لوقو N</h5>
+        <p class="card-text" style="direction: rtl;" >حيث تلتقي الحروف لتصنع هوية تنبض بالحياة والتجدّد.
+تداخل الحروف... بداية قصة توازن وأناقة..</p>
+        <a href="#" class="btn btn-primary" style="background: #9d8394; border-color: #616060;">اطلبي الآن</a>
+    </div>
+ </div>
+
+
+<hr>
+<h2>carousel</h2>
+<!--عندي مشكلة في تحريك الصور في الكاروسيل حاولت اكثر من مره اعرف السبب  بس ما عرفت ليه ما تتحرك لازم بعدين اشوف اي مشكه ب 
+ بس خلاص عرفت السبب لانه اخر شي هذا كود مو مكتوب <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+-->
+
+
+<div id="carouselExampleCaptions" class="carousel slide" style="max-width: 100%; max-height: 300%; margin-bottom: 30px;">
+    <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+        <img style="max-height: 300px;" src="1.png" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+            <h5>First slide label</h5>
+            <p>Some representative placeholder content for the first slide.</p>
+        </div>
+        </div>
+        <div class="carousel-item">
+        <img style="max-height: 300px;" src="4.png" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+            <h5>Second slide label</h5>
+            <p>Some representative placeholder content for the second slide.</p>
+        </div>
+        </div>
+        <div class="carousel-item">
+        <img style="max-height: 300px;" src="3.png" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+            <h5>Third slide label</h5>
+            <p>Some representative placeholder content for the third slide.</p>
+        </div>
+        </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+</div>
+
+<hr>
+<h2> collapse</h2>
+
+    <p class="d-inline-flex gap-1">
+        <a class="btn btn-primary" data-bs-toggle="collapse" href="#x" role="button" aria-expanded="false" aria-controls="collapseExample">
+            Link with href
+        </a>
+        <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#x" aria-expanded="false" aria-controls="collapseExample">
+            Button with data-bs-target
+        </button>
+    </p>
+    <!-- عندما نغير مسمى id الى x  لازم نغير الجميع من href و data-bs-target -->
+    <div class="collapse" id="x">
+ <div class="card card-body">
+        Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
+    </div>
+ </div>
+
+ <hr>
+
+ <h2>mmodals </h2>
+ <!-- Button trigger modal -->
+    <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#exampleModal">
+    Launch demo modal
+    </button>
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+        <div class="modal-header">
+            <h5 class="modal-title fs-5" id="exampleModalLabel"> المودال</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            عبارة عن نافذة منبثقة (Popup Window) تُستخدم لعرض محتوى فوق الصفحة الحالية، مثل:
+
+رسائل التأكيد (Confirmations)
+
+النماذج (Forms)
+
+التنبيهات (Alerts)
+
+أو أي محتوى إضافي دون مغادرة الصفحة
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+         </div>
+    </div>
+    </div>
+
+    <hr>
+<h2>forms</h2>
+    <form>
+        <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+        </div>
+        <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Password</label>
+            <input type="password" class="form-control" id="exampleInputPassword1">
+        </div>
+        <div class="mb-3 form-check">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+            <label class="form-check-label" for="exampleCheck1">Check me out</label>
+        </div>
+
+        <div class="md-3">
+            <label for="range3" class="form-label">This is My Range</label>
+            <input type="range" class="form-range" min="0" max="5" step="0.5" id="range3">
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+
+    </form>
+
+   
+    <div class="row mt-5" style="background: red;">
+        <div class="col-10" style="background: rgb(240, 252, 70);">
+        Column
+        </div>
+        <div class="col" style="background: rgb(229, 137, 32);">
+        Column
+        </div>
+        <div class="col" style="background: #139426;">
+        Column
+        </div>
+        <div class="col-10" style="background: #5a24d9;">
+        Column
+        </div>
+        <div class="col" style="background: #bc2185;">
+        Column
+        </div>
+         <div class="col" style="background: #1f6bed;">
+        Column
+        </div>
+         <div class="col" style="background: #b5dbf3;">
+        Column
+        </div>
+        </div>
+ 
+     <div class="row mt-5 gx-3">
+    <div class="col">
+      <div class="p-3">Custom column padding</div>
+    </div>
+    <div class="col" style="background: #1f6bed;">
+      <div class="p-3">Custom column padding</div>
+    </div>
+  </div>
+
+ <div style="height: 250px; width: 100%"></div>
+ 
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
