@@ -51,5 +51,239 @@
 <meta name="elzero" content="v1.0" />
 
 
-  </body>
+
+
+
+<!--    5-1 التكليف
+تأكد أن الجدول يملأ الشاشة كاملة
+يمكنك كتابة أي أسماء وبيانات تريدها
+حجم الصورة يجب أن يكون 40×40
+يمكنك وضع اي رابط تريده لا توجد مشكلة ولكن أهم شيء أن يفتح الرابط في صفحة جديدة
+يجب إستعمال عناصر ال HTML فقط لعمل المطلوب
+يجب أن يكون الإسم الأول على سطر والثاني على سطر تحته
+الشخص الأول لديه أكثر من Email يجب وضع خط فاصل بينهم
+قم بإضافة Caption للجدول يحتوي على جملة Members Data
+-->
+
+ <table border="1" width="100%" cellspacing="0" cellpadding="5">
+   
+    <tr>
+      <th>Group</th>
+      <th>Avatar</th>
+      <th>Name</th>
+      <th>Email</th>
+      <th>Character</th>
+      <th>Profile</th>
+    </tr>
+
+    <tr>
+      <td rowspan="2">Ninja</td>
+      <td><img src="Bootstrap/3.png" width="40" height="40" alt="Avatar"></td>
+      <td>Osama<br>Mohamed</td>
+      <td>
+        o1@nn.sa
+        <hr>
+        o2@nn.sa
+      </td>
+      <td>©</td>
+      <td><a href="https://example.com" target="_blank">Profile</a></td>
+    </tr>
+
+    <tr>
+      <td><img src="بالونات تطير.jpg" width="40" height="40" alt="Avatar"></td>
+      <td>Shady<br>Nabil</td>
+      <td>s@nn.sa</td>
+      <td>™</td>
+      <td><a href="https://example.com" target="_blank">Profile</a></td>
+    </tr>
+
+    <tr>
+      <td>Monsters</td>
+      <td><img src="Bootstrap/1.png" width="40" height="40" alt="Avatar"></td>
+      <td>Mohamed<br>Ibrahim</td>
+      <td>m@nn.sa</td>
+      <td>®</td>
+      <td><a href="https://example.com" target="_blank">Profile</a></td>
+    </tr>
+
+    <tr>
+      <td colspan="5"><b>Total Members</b></td>
+      <td>3</td>
+    </tr>
+  </table>
+ 
+<!-- تكليف 2-5
+قم بعمل الشكل الموجود في الصورة بال HTML فقط
+-->
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <title>Table Example</title>
+</head>
+<body>
+
+<table border="1" width="40%" cellspacing="0" cellpadding="10" align="center">
+  <caption><b>Table Caption</b></caption>
+  <tr align="center">
+    <th>Date</th>
+    <th>Name</th>
+    <th>Points</th>
+  </tr>
+
+  <tr align="center">
+    <td rowspan="4">Month</td>
+    <td>Osama Mohamed</td>
+    <td>100</td>
+  </tr>
+
+  <tr align="center">
+    <td>Sayed Mohamed</td>
+    <td>100</td>
+  </tr>
+
+  <tr align="center">
+    <td>Ahmed Mohamed</td>
+    <td>100</td>
+  </tr>
+
+  <tr align="center">
+    <td>Eman Mohamed</td>
+    <td>100</td>
+  </tr>
+</table>
+
+
+<!-- التكليف 
+ ما هو السطر الذي يتم كتابته لتخبر المتصفح أن إصدار اللغة المستخدم في إنشاء الصفحة هو HTML5 ؟
+<!DOCTYPE html>
+<--
+
+ما هو ال Rendering Mode الذي سوف يتبعه المتصفح إذا لم تكتب السطر الخاص بتحديد الإصدار ؟
+-->
+<!--
+هل من السليم إستخدام أكثر من h1 في الصفحة جاوب بنعم أو لا ؟
+نعم
+يمكن استخدام أكثر من <h1> في الصفحة الواحدة،
+  لكن بشرط أن يكون كل عنصر <h1> داخل قسم (Section) أو Article منفصل،
+    ، بحيث يكون لكل جزء عنوان رئيسي خاص به.
+-->
+<!--
+لديك عنصر يحتوي على بيانات المنتج، وعنوان المنتج مكتوب بـ <h3>. هل من المنطقي وضع عنوان <h2> داخل نفس المنتج؟
+لا
+  لأن <h2> يمثل عنوانًا أعلى في المستوى من <h3>
+    وبالتالي لا يكون منطقيًا أن يأتي بعده داخل نفس القسم
+    يجب الحفاظ على التسلسل المنطقي للعناوين 
+-->
+    <!-- إلى ماذا ترمز العناصر h1, h2, h3, h4, h5, h6
+ترمز إلى عناوين المحتوى (Headings) في الصفحة، وهي تحدد مستويات العناوين:
+
+<h1> العنوان الرئيسي الأعلى مستوى
+
+<h2> العنوان الفرعي الأول
+
+<h3> العنوان الفرعي من داخل <h2>
+
+وهكذا حتى <h6> وهو أقل مستوى من العناوين
+-->
+  <!--تكليف 
+  هل هناك إختلاف بين هذه العناصر عندما يتم إظهارهم في الصفحة أم لا ؟
+  <p class="element">Welcome To The New World</p>
+<p class='element'>Welcome To The New World</p>
+<p class=element>Welcome To The New World</p>
+
+لا، لا يوجد أي اختلاف في طريقة عرض هذه العناصر في الصفحة.
+
+  -->
+<!--هل هناك إختلاف بين هذه العناصر عندما يتم إظهارهم في الصفحة أم لا ؟
+-->
+<p class=element hidden>Welcome To The New World</p>
+
+<p class="element" hidden>Welcome To The New World</p>
+ <!--لا، لا يوجد أي اختلاف إطلاقًا في طريقة عرض العنصرين في الصفحة — لأن كلاهما لن يظهر أصلًا
+-->
+
+<!--
+التكليف 01
+قم بإنشاء نموذج يحتوي على خمس حقول إدخال
+كل حقل يجب أن يحتوي على Label قبله
+الحقول هي Username, Password, Mobile, Email, Subject
+تأكد من إختيار نوع الحقل المناسب لكل مما سبق
+حقل ال Mobile يمكن أن يحتوي على رقم بهذا الشكل +20100 (234) 123
+حقل ال Username + Email إجباري كتابته
+جميع الحقول يجب أن تحتوي على نص يوجه الشخص لنصائح أثناء ملأ الحقل. يمكنك كتابة ما تريد في النصائح
+يجب أن يكون ال Label على سطر وحقل الإدخال على سطر آخر تحته
+كل Label + Input يجب وضع hr بعدهم للفصل بينهم وبين ال Label + Input الموجودين بعدهم
+البيانات الموجودة في النموذج سوف يتم إرسالها لصفحة اسمها test.py
+يجب التأكد ان البيانات التي يتم إرسالها لن تظهر في الرابط العلوي
+قم بإلتقاط صورة من ال Query String التي تحتوي على البيانات
+يجب عليك وضع حقل مخفي تكون قيمته أي رقم تريده
+يجب وضع زر يقوم بحذف جميع ما تم كتابته في حقول الإدخال ويكون إسمه Empty Form
+يجب وضع زر لإرسال البيانات يكون إسمه Send Data
+-->
+
+<hr>
+
+<h2>نموذج إدخال البيانات</h2>
+
+    <!-- يتم إرسال البيانات إلى test.py عبر POST حتى لا تظهر في الرابط -->
+    <form action="test.py" method="post">
+        
+        <!-- Username -->
+        <label for="username">اسم المستخدم:</label><br>
+        <input type="text" id="username" name="username" placeholder="أدخل اسم المستخدم هنا" required><br>
+        <small>نصيحة: استخدم فقط الحروف والأرقام بدون مسافات.</small>
+        <hr>
+
+        <!-- Password -->
+        <label for="password">كلمة المرور:</label><br>
+        <input type="password" id="password" name="password" placeholder="أدخل كلمة مرور قوية"><br>
+        <small>نصيحة: استخدم مزيج من الأحرف الكبيرة والصغيرة والأرقام.</small>
+        <hr>
+
+        <!-- Mobile -->
+        <label for="mobile">رقم الجوال:</label><br>
+        <input type="tel" id="mobile" name="mobile" placeholder="+20100 (234) 123"><br>
+        <small>نصيحة: أدخل رقمك مع مفتاح الدولة مثل +966 أو +20.</small>
+        <hr>
+
+        <!-- Email -->
+        <label for="email">البريد الإلكتروني:</label><br>
+        <input type="email" id="email" name="email" placeholder="example@mail.com" required><br>
+        <small>نصيحة: تأكد من كتابة بريد إلكتروني صالح لاستلام الردود.</small>
+        <hr>
+
+        <!-- Subject -->
+        <label for="subject">الموضوع:</label><br>
+        <input type="text" id="subject" name="subject" placeholder="اكتب موضوع الرسالة"><br>
+        <small>نصيحة: اكتب ملخصًا بسيطًا عن سبب التواصل.</small>
+        <hr>
+
+        <!-- حقل مخفي -->
+        <input type="hidden" name="user_id" value="12345">
+
+        <!-- الأزرار -->
+        <input type="reset" value="Empty Form">
+        <input type="submit" value="Send Data">
+    </form>
+
+ <br>
+<!--
+ التكليف
+قم بعمل الشكل الموجود في الصورة بال HTML فقط
+القيمة الإفتراضية هي 400
+لا تحتاج لعمل الأرقام هي فقط لتوضيح المطلوب
+-->
+      <div>
+        <label>Range</label>
+        <input type="range" name="range" min="0" max="400" step="20" value="80">
+      </div>
+  
+
+
+</body>
+</html>
+
+
+</body>
 </html>
