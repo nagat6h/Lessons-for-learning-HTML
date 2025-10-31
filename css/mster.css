@@ -1,0 +1,41 @@
+/*اعلان*
+	المعنى
+selector =	المُحدد، أي العنصر الذي تريد تطبيق التنسيق عليه (مثل p, h1, .class, #id)
+property=	الخاصية التي تريد تغييرها (مثل color, font-size, background-color)
+value=	القيمة التي تعطيها لتلك الخاصية (مثل red, 20px, center)
+*/
+selector {
+ Property: value;
+  PropertyTwo: value;
+}
+
+/* استهداف جميع الفقرات */  
+/* 
+p= الفقرة
+color= لون 
+font-size=حجم الخط 
+px = القيم التي نريد تطبيقه
+*/
+p {
+  color: rgb(91, 56, 231);
+  font-size: 40px;
+}
+/* في CSS
+ عندما تتكرر القواعد لنفس العنصر (p هنا)
+  فإن القاعدة الأخيرة هي التي تُلغِي القيم السابقة لنفس الخاصية فقط.*/  
+p {
+  color: rgb(204, 33, 247);
+}
+/*الفقرة( .my-p) . =class*/
+.my-p {
+  color: red;
+  font-size: 40px;
+}
+/* الفقرة  =(#my-p )      #= id*/
+#my-p {
+  color: rgb(227, 164, 36);
+  font-size: 40px;
+}
+p {
+  color: rgb(157, 198, 244);
+}
