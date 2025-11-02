@@ -1,0 +1,201 @@
+/*تكاليف من درس 1 الى 4*/
+/*التكليف 01*/
+/* اكتب في تعليق كل Selector ما الذي يعبر عنه
+ */
+
+/* يختار كل عنصر يحمل الصنف (class) المسمّى "title" */
+.title {
+}
+/* يختار العنصر الذي يحمل المعرف (id) المسمّى "nav" */
+#nav {
+}
+/* يختار جميع عناصر <div> في الصفحة */
+div {
+}
+/* يختار جميع عناصر <h2> (العناوين من المستوى الثاني) في الصفحة */
+h2 {
+}
+/*التكليف 5*/
+/*في أسماء ال Identifiers التالية حدد ما هو صالح وما هو غير صالح عن طريق كتابة Valid أو Not Valid في التعليق قبل الإسم
+*/
+/*  Valid — يبدأ بشرطة سفلية (_) وهذا مسموح */
+._user-name {
+}
+
+/*  Not Valid — لا يمكن أن يبدأ الاسم بشرطة (-) إلا في حالات خاصة مع escape */
+.-user-name {
+}
+
+/*  Not Valid — لا يمكن أن يبدأ الاسم برقم */
+.1user-name {
+}
+
+/*  Not Valid — الرمز @ غير مسموح في أسماء الأصناف */
+.@user-name {
+}
+
+/*  Not Valid — وجود الرمز @ في منتصف الاسم غير مسموح */
+.user@name {
+}
+
+/*  Valid — يحتوي على أرقام في المنتصف، وهذا مسموح */
+._user10name {
+}
+
+/*  Valid — حرف واحد فقط (u)، وهذا اسم صالح */
+.u {
+}
+/*التكليف 6*/
+/*في أسماء ال Identifiers التالية حدد ما الذي يتبع ال Best Practice عن طريق كتابة Good أو Bad في التعليق قبل الإسم*/
+/*  Bad — استخدام الحروف الكبيرة لا يُنصح به في CSS */
+.USERNAME {
+}
+
+/*  Bad — كتابة الأحرف بأسلوب PascalCase غير شائع في CSS */
+.UserName {
+}
+
+/*  Good — هذا هو الأسلوب الأفضل (kebab-case)، حيث تُفصل الكلمات بشرطة صغيرة */
+.user-name {
+}
+
+/*  Bad — أسلوب camelCase يُستخدم عادة في JavaScript وليس في CSS */
+.userName {
+}
+
+/*  Bad — لا توجد فواصل بين الكلمات مما يصعب القراءة */
+.usernameprofile {
+}
+/*تكاليف من درس 5 الى 8*/
+/*تكليف 1*/
+/* الشكل الأول */
+.assign-1-shape-1 {
+  width: 500px;                     /*ال Div عرضه هو 500px */
+  margin: 20px auto;                /*قم بتوسيط ال Div داخل الصفحة بطريقة عرضية*/
+  padding: 20px;                    /*قم بعمل هوامش داخلية قدرها 20px*/
+  background-color: blueviolet;     /* قم بعمل خلفية لل Div لونها blueviolet*/
+
+  /* تكرار اللون بكل الطرق */
+  background-color: rgb(138, 43, 226); /* RGB */
+  background-color: hsl(271, 76%, 53%); /* HSL */
+  background-color: #8a2be2;          /* Hex */
+}
+
+/* الشكل الثاني – بنفس اللون لكن الشفافية 50% */
+.assign-1-shape-2 {
+  width: 500px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: rgba(138, 43, 226, 0.5); /* نصف شفافية */
+}
+
+/* الشكل الثالث – بنفس اللون لكن الشفافية 0.1 */
+.assign-1-shape-3 {
+  width: 500px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: rgba(138, 43, 226, 0.1); /* شفافية بنسبة 10% */
+}
+
+
+/* تكليف 2 */
+/* قاعدة عامة لجميع العناصر */
+.assign-2-shape-1,
+.assign-2-shape-2,
+.assign-2-shape-3,
+.assign-2-shape-4 {
+  /* ال Div طوله وعرضه هو 400px*/
+  width: 400px;
+  height: 400px;
+  margin: 20px auto;
+  border: 2px solid #ccc;
+  /*قم بوضع الصورة الموجودة في بداية التكليفات خلفية للعنصر
+*/
+  background-image: url("css-assignment-5-8.png");
+}
+
+/* الشكل 1 - لا تتكرر الخلفية نهائيًا */
+.assign-2-shape-1 {
+  background-repeat: no-repeat;
+}
+
+/* الشكل 2 - تتكرر الخلفية طوليًا فقط */
+.assign-2-shape-2 {
+  background-repeat: repeat-y;
+}
+
+/* الشكل 3 - تتكرر الخلفية عرضيًا فقط */
+.assign-2-shape-3 {
+  background-repeat: repeat-x;
+}
+
+/* الشكل 4 - تتكرر الخلفية في الاتجاهين (الافتراضي) */
+.assign-2-shape-4 {
+  background-repeat: repeat;
+}
+/* تكليف 3 */
+/* قاعدة عامة لجميع الأشكال */
+.assign-3-shape-1,
+.assign-3-shape-2,
+.assign-3-shape-3,
+.assign-3-shape-4 {
+  width: 400px;
+  height: 400px;
+  margin: 20px auto;
+  border: 2px solid #ccc;
+  background-image: url("css-assignment-5-8.png");
+}
+
+/* الشكل 1: لا تتكرر الخلفية نهائياً */
+.assign-3-shape-1 {
+  background-repeat: no-repeat;
+  background-position: left top; /* الموقع الافتراضي */
+}
+/* الشكل 2: تتكرر طولياً فقط ومكانها في اليمين */
+.assign-3-shape-2 {
+  background-repeat: repeat-y;
+  background-position: right top; /* على اليمين */
+}
+/* الشكل 3: تتكرر عرضياً فقط ومكانها في الأسفل */
+.assign-3-shape-3 {
+  background-repeat: repeat-x;
+  background-position: left bottom; /* أسفل العنصر */
+}
+/* الشكل 4: تتكرر طولياً وعرضياً (الوضع الافتراضي) */
+.assign-3-shape-4 {
+  background-repeat: repeat;
+  background-position: center; /* في المنتصف */
+}
+/* تكليف 4 */
+/* قاعدة عامة لجميع الأشكال */
+.assign-4-shape-1,
+.assign-4-shape-2,
+.assign-4-shape-3,
+.assign-4-shape-4 {
+  width: 400px;
+  height: 400px;
+  margin: 20px auto;
+  border: 2px solid #ccc;
+  background-image: url("../imgs/background.png");
+  background-repeat: no-repeat; /* منع التكرار لجميع الأشكال */
+}
+/* الشكل 1: الخلفية تملأ 80% من الطول والعرض */
+.assign-4-shape-1 {
+  background-size: 80% 80%;
+  background-position: center; /* تبقى في المنتصف */
+}
+/* الشكل 2: الخلفية تغطي العنصر بالكامل (cover) */
+.assign-4-shape-2 {
+  background-size: cover;
+  background-position: center;
+}
+/* الشكل 3: الخلفية تحتوي داخل العنصر دون قص (contain) */
+.assign-4-shape-3 {
+  background-size: contain;
+  background-position: center;
+}
+/* الشكل 4: الخلفية تأخذ 50% من الطول والعرض وتُغيّر مكانها */
+.assign-4-shape-4 {
+  background-size: 50% 50%;
+  background-position: right bottom; /* وضعها في أسفل اليمين */
+}
