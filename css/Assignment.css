@@ -176,7 +176,7 @@ h2 {
   height: 400px;
   margin: 20px auto;
   border: 2px solid #ccc;
-  background-image: url("../imgs/background.png");
+  background-image: url("css-assignment-5-8.png");
   background-repeat: no-repeat; /* منع التكرار لجميع الأشكال */
 }
 /* الشكل 1: الخلفية تملأ 80% من الطول والعرض */
@@ -198,4 +198,90 @@ h2 {
 .assign-4-shape-4 {
   background-size: 50% 50%;
   background-position: right bottom; /* وضعها في أسفل اليمين */
+}
+/*تكاليف من درس 9 الى 12*/
+/*التكليف 1
+قم بعمل ثلاث عناصر نوعهم Div
+قم بوضع الثلاث عناصر بجانب بعضهم وبدون تحديد عرض لهم
+قم بعمل نفس الشكل الموجود في المثال بنفس الألوان
+حجم كل حافة من الحواف هو 5px
+*/
+ /* الحاوية التي تحتوي على الأشكال فقط */
+.shapes {
+  display: flex;
+  margin: 20px 0;
+}
+/* الشكل العام لكل المربعات */
+.shape {
+  background: #ccc;
+  font-size: 40px;
+  font-weight: bold;
+  text-align: center;
+  padding: 80px;
+  border: 10px solid black;
+  margin: 10px;
+}
+
+
+/* الشكل 1: حافة حمراء كاملة */
+.shape1 {
+  border: 15px solid black;
+  outline: 5px solid red;
+  outline-offset: -15px;
+}
+
+/* الشكل 2: الحواف بلونين وزوايا مائلة */
+.shape2 {
+  border: 15px solid black;
+  background: 
+    linear-gradient(to right, green 5px, transparent 5px) left,
+    linear-gradient(to left, green 5px, transparent 5px) right,
+    linear-gradient(to bottom, blue 5px, transparent 5px) top,
+    linear-gradient(to top, blue 5px, transparent 5px) bottom,
+    #ccc;
+  background-repeat: no-repeat;
+  background-size: 5px 100%, 5px 100%, 100% 5px, 100% 5px;
+}
+
+/* الشكل 3: الحواف متعددة الألوان ومائلة */
+.shape3 {
+  border: 15px solid black;
+  background:
+    repeating-linear-gradient(to right, red 0 20px, transparent 20px 25px) top,
+    repeating-linear-gradient(to right, blue 0 20px, transparent 20px 25px) bottom,
+    repeating-linear-gradient(to bottom, green 0 20px, transparent 20px 25px) right,
+    repeating-linear-gradient(to bottom, yellow 0 20px, transparent 20px 25px) left,
+    #ccc;
+  background-repeat: no-repeat;
+  background-size: 100% 5px, 100% 5px, 5px 100%, 5px 100%;
+  background-origin: content-box;
+  background-clip: content-box;
+}
+
+/*تكليف 2 
+*/
+.element {
+  width: 400px;
+  background-color: #eee;
+  font-size: 30px;
+  font-weight: bold;
+  padding: 20px;
+  margin: 20px auto;
+  border-left: 10px solid;
+}
+
+/* العنصر الأول */
+.element-1 {
+  border-color: #e91e63; /* وردي */
+}
+
+/* العنصر الثاني — مخفي لكن يحتفظ بمكانه */
+.element-2 {
+  border-color: #2196f3; /* أزرق */
+  visibility: hidden; /* يخفي العنصر ويحافظ على المساحة */
+}
+
+/* العنصر الثالث */
+.element-3 {
+  border-color: #009688; /* أخضر زمردي */
 }

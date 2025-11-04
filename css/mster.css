@@ -141,4 +141,76 @@ repeat-y= تكرار الصورة في الاتجاه العمودي فقط*/
   نختصرها الى margin: auto;
     */
   margin: auto;
+  
+  /* حجم الحدود*/
+  border-width: 10px;
+  /*لون الحدود*/
+  border-color: red green;
+  /*  نوع الحدود*/
+  border-style: solid;*/
+  /*الحجم الحدو+ نوع الحدو+لون الحدو*/
+   border: 10px solid  red;
+}
+.Test { 
+  background-color: #DDD;
+  /*الطول*/
+  width: 300px;
+  /*مسافة داخلية داخل العنصر.*/
+  padding: 10px;
+  /*إطار خارجي يُرسم حول العنصر من الخارج، لكنه لا يؤثر على أبعاده (الطول والعرض).
+  اتجاه واحد
+  */
+  outline: 10px solid rgb(241, 115, 115);
+    /*الحدود*/
+  border: 10px solid rgb(113, 113, 206) ;
+}
+/* Block (عنصر بلوكي)
+  - يأخذ العرض الكامل إذا لم نحدد له عرض (Width)
+  - يبدأ في سطر جديد (يُحدث كسر سطر)
+  - يحترم خصائص (Padding, Margin, Width, Height)
+  */
+  .Tst { background-color: #a0f1a4;
+  position: 10PX;
+  margin: 10px;
+  width: 300PX;
+  height: 30PX;
+}
+  /* Inline (عنصر داخل السطر)
+  - لا يحترم العرض والارتفاع (Width, Height)
+  - يحترم فقط الهوامش والمسافات الداخلية يمين ويسار (Padding & Margin Right/Left)
+  - لا يبدأ في سطر جديد
+  - يمكن أن يظهر بجانبه عناصر أخرى في نفس السطر
+  */
+span {
+  background-color: #c24646;
+   width: 300PX;/* ما تشتغل*/
+   height: 30PX;/*ما تشتغل*/
+  padding: 30PX;/* لا يحترمالعرض ولا ارتفاع*/
+   margin: 20px;/*يحترم*/
+}
+
+  /*
+   Inline-Block (عنصر داخل السطر بلوكي)
+  - يسمح بوجود عناصر أخرى بجانبه في نفس السطر
+  - يحترم خصائص (Padding, Margin, Width, Height)
+*/
+.Inline-Block {
+  background-color: #4674c2;
+  display: inline-block;
+  padding: 10px;
+  margin: 20px;
+  width: 300px;
+  height: 50px;
+}
+.first {
+    background-color: red;
+  margin: 10px 0;  
+/*  display: none; اخاف العنصر */
+visibility: hidden;/* يخفي العنصر بس مكان موجود*/
+}
+
+.frst {
+  background-color: red;
+  margin: 10px 0;
+
 }
