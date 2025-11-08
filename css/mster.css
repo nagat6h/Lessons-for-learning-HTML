@@ -203,14 +203,124 @@ span {
   height: 50px;
 }
 .first {
-    background-color: red;
+    background-color: rgb(189, 115, 211);
   margin: 10px 0;  
 /*  display: none; اخاف العنصر */
 visibility: hidden;/* يخفي العنصر بس مكان موجود*/
 }
 
 .frst {
-  background-color: red;
+  background-color: rgb(170, 219, 240);
   margin: 10px 0;
+
+}
+/* ================================
+   تنسيقات خاصة بكل عنصر لوحده
+   ================================ */
+
+/* العنصر الأول - لونه أحمر وخط سفلي أحمر */
+.one {
+  /*padding: 15px; */
+  border-bottom: 2px solid red; /* خط سفلي */
+  color: red; /* لون النص */
+  /* color: black; 
+  background-color: #9e81a4;*/
+}
+
+/* العنصر الثاني - لونه أخضر وخط سفلي أخضر */
+.two {
+  /*padding: 15px; */
+  border-bottom: 2px solid green;
+  color: green;
+  /* color: black; 
+  background-color: #9e81a4;*/
+}
+
+/* العنصر الثالث - لونه أزرق وخط سفلي أزرق */
+.three {
+  /*padding: 15px; */
+  border-bottom: 2px solid blue;
+  color: blue;
+  /* color: black; 
+  background-color: #9e81a4;*/
+}
+
+/* العنصر الرابع - لونه أسود وخط سفلي أسود */
+.four {
+  /*padding: 15px; */
+  border-bottom: 2px solid black;
+  /* color: black; 
+  background-color: #9e81a4;*/
+}
+
+/* ================================
+   Grouping Multiple Selectors
+   (تجميع أكثر من سيلكتور مع بعض)
+   ================================ */
+
+/* هنا جمعنا كل العناصر (one, two, three, four, my-p)
+   عشان نعطيهم نفس التنسيق بدون تكرار الكود */
+.one,
+.two,
+.three,
+.four,
+.mn-p {
+  padding: 15px; /* مسافة داخلية حول النص */
+  margin: 12px 0; /* مسافة خارجية فوق وتحت العنصر */
+  background-color: #9e81a4; /*  لون خلفية موحّد لكل العناصر   */
+  }
+/* ================================
+   Nesting (التداخل) */
+
+/* المعنى:
+   - حدد العنصر الذي يحمل الكلاس .special
+   - بشرط أن يكون داخل div
+*/
+div .special {
+  color: rgb(239, 228, 132); /* يجعل الفقرة داخل الـdiv باللون الأصفر فقط */
+}
+/* ================================
+   درس: Dimensions (الأبعاد)
+   ================================ */
+
+/* الكلاس name يمثل كل عنصر يحتوي الاسم */
+.name {
+  background-color: red;     /* لون الخلفية */
+  padding: 10px;             /* مسافة داخلية حول الاسم */
+  display: inline-block;     /* يخلي العنصر يظهر بجانب غيره بدون ياخذ عرض الصفحة كامل */
+ /* max-width: 400px;          /* أقصى عرض للعنصر */
+ /* min-width: 400px;   /* أقل عرض ممكن للعنصر */
+  /*height: 40px; ارتفاع ثابت لا يتغيّر        -
+ min-height: 40px; أقل ارتفاع ممكن  
+max-height:40px  أكبر ارتفاع ممكن   */
+ width: fit-content; /* العرض يساوي حجم المحتوى بالضبط */
+}
+/* ملاحظات:
+   - display: inline-block → يخلي كل "اسم" يظهر مثل كلمة أو زر بجانب الآخر
+   - max-width → يمنع العنصر من التمدد أكثر من 400px حتى لو الشاشة كبيرة
+   - padding → يضيف مسافة داخلية حول النص
+*/
+/*
+درس CSS Overflow – Overflow-X و Overflow-Y 
+يختص بكيفية التحكم بما يحدث عندما تتجاوز محتويات العنصر أبعاد الصندوق (width و height)*/
+.nnn {
+  width: 150px;               /* عرض العنصر */
+  height: 150px;              /* ارتفاع العنصر */
+  background-color: #EEE;     /* لون الخلفية */
+  margin: 20px auto;          /* مسافة من الأعلى والأسفل + توسيط أفقياً */
+  border-radius: 6px;         /* زوايا مستديرة */
+   /*overflow: visible;     المحتوى الزائد لا يتم قصه ولا يظهر شريط تمرير، بل يخرج من حدود الصندوق.*/ 
+  /* overflow-x: hidden;      إخفاء المحتوى الزائد أفقيًا */
+  /* التحكم بما يحدث عند تجاوز المحتوى أبعاد الصندوق */
+  /* overflow-x: scroll;      ظهور شريط تمرير أفقي دائم */
+    overflow-x: auto;       /* ظهور شريط تمرير أفقي عند الحاجة */
+
+  /* overflow-y: hidden;      إخفاء المحتوى الزائد عموديًا */
+  /* overflow-y: scroll;      ظهور شريط تمرير عمودي دائم */
+   overflow-y: auto;        /*ظهور شريط تمرير عمودي عند الحاجة */
+  
+
+  
+ 
 
 }
