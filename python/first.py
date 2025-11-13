@@ -568,3 +568,113 @@ print(f"My Name is : {myName} and My Age is : {myAge}")  # My Name is NAJAT and 
 #https://www.programiz.com/python-programming/methods/string  شرح دوال النصوص في بايثون
 #https://docs.python.org/3/library/stdtypes.html#string-methods  التوثيق الرسمي لدوال النصوص في بايثون
 #-----------------------------------------
+#-----------  #  Numbers  اعداد
+#Integers  الأعداد الصحيحة
+print(type(1))
+print(type(100))
+print(type(10))
+print(type(-1))
+print(type(-100))
+print(type(-10))
+#float  الأعداد العشرية
+print(type(1.500))
+print(type(10.99))
+print(type(0.99))
+print(type(-0.99))
+print(type(-10.1))
+
+#complex  الأعداد المعقدة
+myComplexNumber = 5+6j
+print(type(myComplexNumber))
+print("Real Part is: {}".format(myComplexNumber.real))
+print("Imaginary Part is: {}".format(myComplexNumber.imag))
+
+#[1] you can convert from int to float or complex يعني يمكنك تحويل الرقم الصحيح إلى رقم عشري أو معقد
+#[2] you can convert from float to int or complex يعني يمكنك تحويل الرقم العشري إلى رقم صحيح أو معقد
+#[3]you cannot convert complex to avy typa يعني لا يمكنك تحويل الرقم المعقد إلى أي نوع آخر
+#امثلة
+print(100)
+print(float(100))
+print(complex(100))
+
+print(10.50)
+print(int(10.50))
+print(complex(10.50))
+
+print(10+5j)
+#print(int(10+5j)) # Error يعني خطأ
+#print(float(10+9j)) # Error يعني خطأ
+#---------------------------------------------------
+# Arithmetic Operators  مشغلات العمليات الحسابية 
+#[+]Addition الجمع
+#[-]Subtraction الطرح
+#[*]Multiplication الضرب
+#[/]Division القسمة
+#[%]Modulus الباقي
+#[**]Exponentiation التربيع
+#[//]Floor Division القسمة
+
+#[+]Addition الجمع
+print(10 + 30) # = 40 
+print(-10 + 20) # = 10 
+print(1 + 2.66) # = 3.66 
+print(1.2 + 2.2) # = 3.4
+
+#[-]Subtraction الطرح
+print(60 - 30) # = 30
+print(-30 - 20) # = -50 
+print(-30 - - 20) # = -10
+print(5.66 - 3.44) # = 2.22
+
+#[*]Multiplication الضرب
+print(10 * 3) # = 30
+print(5+ 10 *100) # = 1005 
+print((5+ 10)*100) # = 1500
+
+#[/]Division القسمة
+print(100 / 20) # = 5.0
+print (int(100 / 20)) # = 5
+
+#[%]Modulus الباقي
+print(8 % 2) # = 0   ليه صفر لأن 8 / 2 = 4
+print(9 % 2) # = 1  كم نشيل من 9 عشان يفضل رقم نقسمه على 2 يطلع عدد صحيح
+print(20 % 5) # = 0   كم نشيل من 20 عشان يفضل رقم نقسمه على 5 يطلع عدد صحيح
+print(22 % 5) # = 2  كم نشيل من 22 عشان يفضل رقم نقسمه على 5 يطلع عدد صحيح 
+
+#[**]Exponentiation التربيع
+print(2 ** 5) # = 32  2 * 2 * 2 * 2 * 2 = 32
+#يعني # 
+print(2*2*2*2*2)# = 32
+print(5**4)# = 625  5 * 5 * 5 * 5 = 625
+print(5*5*5*5)# = 625
+
+#[//]Floor Division القسمة
+print(100 // 20) # = 5
+print(110 // 20) # = 5    ليه 5 لأن 110 / 20 = 5.5
+print(120 // 20) # = 6    ليه 6 لأن 120 / 20 = 6.0
+print(130 // 20) # = 6    ليه 6 لأن 130 / 20 = 6.5
+print(139 // 20) # = 6    ليه 6 لأن 139 / 20 = 6.95
+#-----------------------------------
+#--------- Lists | القوائم ------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#---------------الخاصة بالقوائم Lists الجزء الأول --------- Methods يعني (الطريقة أو الدالة التابعة)
+#Method = دالة تنتمي إلى نوع بيانات محدد (object)
+#وتُكتب دائمًا بهذه الصيغة:
+#object.method()
+
+
+

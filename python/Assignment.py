@@ -136,3 +136,47 @@ msg = "I <3 Python And Although <3 Elzero Web School"
 # I Love Python And Although <3 Elzero Web School
 print(msg.replace("<3", "Love", 1))
 #-----------------------------------------------
+#تكليفات الدروس من 19 إلى 20
+#التكليف 1
+#قم بطباعة جميع أنواع ال Numbers كل واحد في سطر منفصل
+print(type(10))
+print(type(10.1))
+print(type(10+10j))
+#التكليف 2
+#قم بطباعة الجزء ال Imaginary من ال Complex Number التالي “1+2j” في السطر الأول وفي السطر الثاني قم بطباعة جزء ال Real
+1+2j
+# Print Imaginary Part Here
+# Print Real Part Here
+print(1+2j.imag)
+print(1+2j.real)
+#التكليف 3
+#قم بتحويل الرقم 10 ل Floating Point Number مع وضع عشر أرقام بعد العلامة العشرية
+num = 10
+# Needed Ouput
+# 10.0000000000
+# تحويل إلى Float وعرض 10 أرقام بعد العلامة العشرية
+print(f"{float(num):.10f}")
+#التكليف 4
+#قم بتحويل الرقم 159.650 ل Integer ثم قم بطباعته في أول سطر ثم في تاني سطر تقوم بطباعة نوعه والـاكد أنه Integer
+num = 159.650
+
+# Needed Output
+# 159
+# <class 'int'>
+print(int(num))
+print(type(num))  #    <class 'float'>  طلع  مو <class 'int'>
+
+#التكليف 5
+#قم بوضع العلامة الحسابية المناسبة بدل علامة الإستفهام لتكون النتيجة صحيحة في الأمثلة التالية
+#100 - 115 = -15
+print(100 - 115) # -15
+#50 * 30 = 1500
+print(50 * 30) # 1500
+#21 % 4 = 1
+print(21 % 4) # 1
+#110 // 11 = 10
+print(110 // 11)
+#97 ? 20 = 4
+print(97 // 20) # 4
+
+
