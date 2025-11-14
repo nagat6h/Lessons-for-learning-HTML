@@ -655,26 +655,178 @@ print(120 // 20) # = 6    ليه 6 لأن 120 / 20 = 6.0
 print(130 // 20) # = 6    ليه 6 لأن 130 / 20 = 6.5
 print(139 // 20) # = 6    ليه 6 لأن 139 / 20 = 6.95
 #-----------------------------------
-#--------- Lists | القوائم ------
+#--------- Lists | مرتبة القوائم ------
+#[1]list items are enclosed in square brackets  يعني قوائم العناصر مغلقة في الأقواس المربعة
+#[2] list are ordered, to use lndex to access item يعني القوائم مرتبة، لاستخدام الفهرس للاستفادة من العنصر
+#[3] list are mutable => add, delete, edit يعني القوائم قابلة للتعديل => إضافة، حذف، تعديل
+#[4]nlist items is not unique يعني عناصر القوائم غير مكررة
+#[5]list can have different data types يعني قوائم يمكن أن تحتوي على أنواع مختلفة
 
 
+myAwesomeList = ['one', 'two', 'three', 1 , 100.5, True]
+print(myAwesomeList)# ['one', 'two', 'three', 1 , 100.5, True]
+print(type(myAwesomeList[1]))# <class 'str'>
+print(myAwesomeList[1])# two
+print(myAwesomeList[-1])# True
+print(myAwesomeList[-3])# three
 
+print(myAwesomeList[1:4])# ['two', 'three', 1]  ليه 4 لأنه يبدأ من 1 وينتهي عند 4
+print(myAwesomeList[:4])# ['one', 'two', 'three', 1]  ليه 4 لأنه يبدأ من البداية وينتهي عند 4
+print(myAwesomeList[1:])# ['two', 'three', 1, 100.5, True]  ليه 4 لأنه يبدأ من 1 وينتهي عند آخر القائمة
+print(myAwesomeList[::1])# ['one', 'two', 'three', 1, 100.5, True]
+print(myAwesomeList[::2])# ['one', 'three', 100.5]  ليه 2 لأنه يبدأ من البداية وينتهي عند آخر القائمة]
+#print(myAwesomeList[150])# Error
+print(myAwesomeList) # ['one', 'two', 'three', 1 , 100.5, True]
+myAwesomeList[1] =2 # يعني تغير العنصر في الفهرس 1
+myAwesomeList[-1] = False # يعني تغير العنصر في الفهرس -1
+#myAwesomeList[:2] = []# يعني حذف العنصر في الفهرس 1 و 2]
+myAwesomeList[:3] = ["A", "B", "C"] # يعني تغيير العنصر في الفهرس 1 و 2 و 3    
+print(myAwesomeList)# ['one', 2, 'three', 1 , 100.5, False]
 
-
-
-
-
-
-
-
-
-
-
-
+#---------------------------------------------
 #---------------الخاصة بالقوائم Lists الجزء الأول --------- Methods يعني (الطريقة أو الدالة التابعة)
 #Method = دالة تنتمي إلى نوع بيانات محدد (object)
 #وتُكتب دائمًا بهذه الصيغة:
 #object.method()
 
+#Append()  إضافة عناصر
+myfriends = ['Najat', 'Amoon', 'Noura']
+myoidfriends = ['Fatom', 'Hanan', 'thane']
+myfriends.append('ranh')
+myfriends.append(1000)
+myfriends.append(15.670)
+myfriends.append(True)
+myfriends.append(myoidfriends)
+print(myfriends)# ['Najat', 'Amoon', 'Noura', 'ranh', 1000, 15.67, True, ['Fatom', 'Hanan', 'thane']]
+print(myfriends[2])# Noura
+print(myfriends[6])# True
+print(myfriends[7])# ['Fatom', 'Hanan', 'thane']
+print(myfriends[7][2])# thane
+print(myfriends[7][1])# Hanan
+print(myfriends[7][0])# Fatom
+
+#extend()  إضافة عناصر
+a = [1,2,3]
+b = ['a','b','c']
+c = ["one", "two", "three"]
+a.extend(b)
+a.extend(c)
+print(a)# [1, 2, 3, 'a', 'b', 'c', 'one', 'two', 'three']
+
+#remove()  إزالة عناصر
+x = [1,2,3,4,5, "najat", True ,"najat", "najat"]
+
+x.remove("najat")
+print(x)# [1, 2, 3, 4, 5, True, 'najat', 'najat'] تحذف أول عنصر يتطابق مع القيمة المحددة
+
+#sort()  ترتيب العناصر
+
+#y = [1,2,100, -10 , 17 , 29 ]
+y = ['A','B','C']
+#y.sort() # [-10, 1, 2, 17, 29, 100] ترتيب العناصر
+y.sort(reverse=True) #  [100, 29, 17, 2, 1, -10] ترتيب العناصر بالعكس
+#y.sort(reverse = False)# [-10, 1, 2, 17, 29, 100] ترتيب العناصر
+print(y)# [100, 29, 17, 2, 1, -10] ترتيب العناصر
+
+#reverse()  عكس العناصر
+z = [10,1, 9, 80, 100, "najat", 100] 
+z.reverse()
+print(z)
+
+#----- Lists Methods Part 2--- يعني (الخاصة بالقوائم Lists الجزء الثاني)
+#Clear()  حذف العناصر
+qp= [1,2,3,4]
+pq = qp.copy()
+qp.clear()
+print(qp)# [] main list يعني القائمة الرئيسية
+print(pq)# [1, 2, 3, 4] copied list يعني القائمة المنسدلة    
+
+qp.append(5)
+print(qp)# [5] يعني 
+print(pq)# [1, 2, 3, 4]
+
+#count()  العدد
+
+r = [1,2,3,4,3,9,10, 1,2,1]
+print(r.count(1))# 3
+
+# index()  العنصر
+qs = [ "Amoon", "Noura" , "osama" , "Ahmed" , "Najat", "Najat"]
+print(qs.index("Najat"))# 4
+
+#insert()  إضافة عناصر
+qf = [1,2,3,4,5 ,"A","B"]
+#qf.insert(0,"Test")# ["Test",1,2,3,4,5 ,"A","B"]
+qf.insert(-1,"Test")# [ 1, 2, 3, 4, 5, 'A', 'Test', 'B']
+print(qf)
+
+#pop()  إزالة عناصر
+qn =  [1,2,3,4,5 ,"A","B"]
+
+print(qn.pop(-3))  # 4
+#------------------------------------
+#------Tuples Methods Part 1-- يعني (الخاصة بالقوائم Tuples الجزء الأول)--
+# tuple()  إنشاء قوائم => لكنها غير قابلة للتغيير
+#[1]tuple ilems are enclosed in parenthess
 
 
+
+
+#-------- من درس 24 الى درس  نرجع له بعدين
+
+
+#---------Control Flow – If, Elif, Else يعني التحكم في التدفق - إذا، وإلا إذا، وإلا
+uName = "Najat"
+uCountry = "KSA"
+cName = "python course"
+cPrice = 100
+if uCountry == "Egypt":
+    print(f"Hello {uName} Because You From {uCountry}")
+    print(f"The Course \"{cName}\" Price is: {cPrice- 80}$")
+elif uCountry == "KSA":
+    print(f"Hello {uName} Because You From {uCountry}")
+    print(f"The Course \"{cName}\" Price is: {cPrice - 50}$")
+elif uCountry == "Kuwait":
+    print(f"Hello {uName} Because You From {uCountry}")
+    print(f"The Course \"{cName}\" Price is: {cPrice - 40}$")    
+else:
+    print(f"Hello {uName} Because You From {uCountry}")
+    print(f"The Course \"{cName}\" Price is: {cPrice -30}$")
+
+    #-------------------
+#------Control Flow – Nested If And Trainings يعني التحكم في التدفق - إذا متداخل وتدريبات
+
+uname = "Najat"
+issubclass="Yes"
+ucountry = "Eritrea"
+cname = "python course"
+cprice = 100
+
+if ucountry == "Egypt" or ucountry == "KSA" or ucountry == "qatar" or ucountry == "Eritrea": 
+    if issubclass == "Yes":
+        print(f"Hello {uname} Because You From {ucountry} And Subclass")
+        print(f"The Course \"{cname}\" Price is: {cprice - 90}$")
+    else:
+        print(f"Hello {uname} Because You From {ucountry}")
+        print(f"The Course \"{cname}\" Price is: {cprice - 80}$")
+
+elif ucountry == "Kuwait" or ucountry == "Bahrain":
+    print(f"Hello {uName} Because You From {ucountry}")
+    print(f"The Course \"{cName}\" Price is: {cprice - 50}$") 
+
+else:
+    print(f"Hello {uname} Because You From {ucountry}")
+    print(f"The Course \"{cname}\" Price is: {cprice -30}$")
+#-------------------
+#-Ternary Conditional Operator يعني عامل الشرط الثلاثي
+country= "Eritrea"
+if country == "Eritrea":
+    print(f"the weather in {country} is 15")
+
+elif country == "KSA":
+    print(f"the weather in {country} is 30")
+else:
+    print("contry  is not in the list")
+
+#short if     مختصر if
+movieRate = 18

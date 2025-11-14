@@ -179,4 +179,117 @@ print(110 // 11)
 #97 ? 20 = 4
 print(97 // 20) # 4
 
+#تكليفات الدروس من  21 إلى 23
+#التكليف 1
+#قم بعمل قائمة List تحتوي على أسماء أصدقائك ويكون فيها على الأقل 5 أسماء والمطلوب في السطر الأول والثاني طباعة إسم أول صديق في القائمة بطريقتين ثم في السطر الثالث والرابع تقوم بطباعة إسم آخر صديق في القائمة بطريقتين
+friends = ["Osama", "Ahmed", "Sayed", "Ali", "Mahmoud"]
+
+# Needed Output
+# "Osama" => Method One
+# "Osama" => Method Two
+# "Mahmoud" => Method One
+# "Mahmoud" => Method Two
+print(friends[0])# Osama
+print(friends[-5])# Osama
+print(friends[4])# Mahmoud
+print(friends[-1])# Mahmoud
+#التكليف 2
+#من القائمة السابقة قم بطباعة الأسماء الفردية في السطر الأول وفي السطر الثاني قم بطباعة الأسماء الزوجية
+friends = ["Osama", "Ahmed", "Sayed", "Ali", "Mahmoud"]
+
+# Needed Output
+# "Osama", "Sayed", "Mahmoud"
+# "Ahmed", "Ali"
+print(f'"{friends[0]}", "{friends[2]}", "{friends[4]}"')
+print(f'"{friends[1]}", "{friends[3]}"')
+#التكليف 3
+#قم بطباعة مجموعة الأسماء رقم 2 و 3 و 4 في السطر الأول ثم الأسم الأخير والذي قبله في السطر الثاني مع العلم أن ال Code يجب أن يعمل في حالة قمنا بتغيير عدد العناصر الموجودة في القائمة
+friends = ["Osama", "Ahmed", "Sayed", "Ali", "Mahmoud"]
+
+# Needed Output
+# "Ahmed", "Sayed", "Ali",
+# "Ali", "Mahmoud"
+print(f'"{friends[1]}", "{friends[2]}", "{friends[3]}"')
+print(f'"{friends[3]}", "{friends[4]}"')
+
+#التكليف 4
+#قم بتحديث آخر أسمين في القائمة لإسم “Elzero”
+friends = ["Osama", "Ahmed", "Sayed", "Ali", "Mahmoud"]
+
+# Needed Output
+# ["Osama", "Ahmed", "Sayed", "Elzero", "Elzero"]
+friends[-1] = "Elzero" # تحديث آخر أسمين في القائمة
+friends[-2] = "Elzero" # تحديث آخر أسمين في القائمة
+print(friends)
+
+#التكليف 5
+#قم بإضافة إسم من أصدقائك للقائمة في أول القائمة أولا ثم قم بإضافة إسم آخر في نهاية القائمة
+friends = ["Osama", "Ahmed", "Sayed"]
+
+# Needed Output
+# ["Nasser", "Osama", "Ahmed", "Sayed"]
+# ["Nasser", "Osama", "Ahmed", "Sayed", "Salem"]
+friends.insert(0, "Nasser") # إضافة اسم في بداية القائمة
+friends.append("Salem") # إضافة اسم في نهاية القائمة
+print(friends)
+
+#التكليف 06
+#قم بحذف أول إسمين من القائمة ثم بعدها في سطر آخر قم بإزالة آخر إسم من القائمة
+friends = ["Nasser", "Osama", "Ahmed", "Sayed", "Salem"]
+
+# Needed Output
+# ["Ahmed", "Sayed", "Salem"]
+# ["Ahmed", "Sayed"]
+friends.remove("Nasser") # حذف أول إسمين من القائمة 
+friends.remove("Osama") # حذف أول إسمين من القائمة
+print(friends)
+friends.pop() # إزالة آخر إسم من القائمة
+print(friends) 
+#التكليف 7
+#قم بإنشاء قائمتين آخريين فيهم المزيد من الأصدقاء ثم قم بضمهم على أول قائمة لتخرج بالقائمة النهائية فيها جميع الأصدقاء
+friends = ["Ahmed", "Sayed"]
+employees = ["Samah", "Eman"]
+school = ["Ramy", "Shady"]
+
+# Needed Output
+# ["Ahmed", "Sayed", "Samah", "Eman", "Ramy", "Shady"]
+friends.extend(employees)
+friends.extend(school)
+print(friends)
+
+#التكليف8
+#قم بترتيب الأسماء في القائمة في السطر الأول من A إلى Z وفي السطر الثاني من Z إلى A
+friends = ["Ahmed", "Sayed", "Samah", "Eman", "Ramy", "Shady"]
+
+# Needed Output
+# ['Ahmed', 'Eman', 'Ramy', 'Samah', 'Sayed', 'Shady']
+# ['Shady', 'Sayed', 'Samah', 'Ramy', 'Eman', 'Ahmed']
+friends.sort() # ترتيب الأسماء في القائمة من A إلى Z
+print(friends)
+friends.sort(reverse=True) # ترتيب الأسماء في القائمة من Z إلى A
+print(friends)
+#التكليف9
+#قم بحساب عدد الأسماء الموجودة في القائمة
+friends = ["Ahmed", "Sayed", "Samah", "Eman", "Ramy", "Shady"]
+# Needed Output
+# 6
+print(len(friends)) # طباعة عدد الأسماء الموجودة في القائمة
+
+
+#التكليف 10
+#قم بعمل قائمة فيها لغات البرمجة المشهورة وداخلها قائمة فرعية فيها أسماء أطر عمل مشهورة ثم في السطر الأول قم بطباعة إسم اول اطار عمل في القائمة الفرعية وفي السطر الثاني إسم آخر إطار عمل في القائمة الفرعية مع مراعاة أن القائمة الفرعية يمكن أن تزيد ولكنها دائما آخر عنصر في القائمة الرئيسية
+technologies = ["Html", "CSS", "JS", "Python", ["Django", "Flask", "Web"]]
+
+# Needed Output
+# Django
+# Web
+print(technologies[4][0])
+print(technologies[4][2])
+#-----------------------------------------------
+#تكليفات الدروس من 24 إلى 25
+#التكليف 1
+
+
+
+
 
